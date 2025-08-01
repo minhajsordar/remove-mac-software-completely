@@ -1,0 +1,1 @@
+# remove-mac-software-completely
