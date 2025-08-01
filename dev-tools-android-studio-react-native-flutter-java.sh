@@ -4,15 +4,25 @@ echo "🧹 Starting full cleanup of Android Studio, Java, Flutter, and React Nat
 
 ### ---- Android Studio Removal ---- ###
 echo "🔧 Removing Android Studio..."
+
+# Delete the Android Studio app
 sudo rm -rf /Applications/Android\ Studio.app
+
+#Delete Android Studio configuration and cache files
 rm -rf ~/Library/Application\ Support/Google/AndroidStudio*
 rm -rf ~/Library/Preferences/AndroidStudio*
 rm -rf ~/Library/Logs/AndroidStudio*
 rm -rf ~/Library/Caches/AndroidStudio*
+
+# Remove Android SDK and AVD files
 rm -rf ~/Library/Android
+
+# Remove Gradle and other caches (optional)
 rm -rf ~/.android
 rm -rf ~/.gradle
 rm -rf ~/.config/Google
+
+# Remove JetBrains IDE support files (optional)
 rm -rf ~/Library/Application\ Support/JetBrains
 rm -rf ~/Library/Preferences/com.jetbrains.*
 
